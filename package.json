@@ -30,8 +30,8 @@
     "tslint": "tslint 'src/**/*.ts' 'test/**/*.ts'",
     "coverage": "nyc mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "validate": "yarn tslint && yarn coverage && yarn build",
-    "prerelease": "yarn validate",
+    "validate": "yarn tslint && yarn coverage",
+    "prerelease": "yarn validate && yarn build",
     "release": "yarn publish"
   },
   "devDependencies": {
