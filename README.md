@@ -1,5 +1,9 @@
 # ts-template-project #
 
+
+[![Travis](https://img.shields.io/travis/USER/REPO.svg)](https://travis-ci.org/normartin/ts-template-project)
+
+
 A template for typescript npm packages.
 Use it with yarn.
 
