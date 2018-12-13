@@ -5,7 +5,6 @@
 [![Dependencies](https://david-dm.org/normartin/ts-template-project.svg)](https://david-dm.org/normartin/ts-template-project)
 
 A template for typescript npm packages.
-Use it with yarn.
 
 ## Scripts ##
 
@@ -13,4 +12,4 @@ Use it with yarn.
 * coverage: check test coverage
 * build: cleanup and compile files to _dist/_
 * validate: tslint && coverage && build (use this for CI)
-* release: validate && yarn publish
+* release: validate && publish
