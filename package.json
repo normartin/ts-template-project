@@ -23,16 +23,16 @@
   },
   "scripts": {
     "cleanup": "del-cli dist reports .nyc_output",
-    "prebuild": "yarn cleanup",
+    "prebuild": "npm run cleanup",
     "build": "tsc",
     "test": "mocha",
-    "posttest": "yarn tslint",
+    "posttest": "npm run tslint",
     "tslint": "tslint 'src/**/*.ts' 'test/**/*.ts'",
     "coverage": "nyc mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "validate": "yarn tslint && yarn coverage",
-    "prerelease": "yarn validate && yarn build",
-    "release": "yarn publish"
+    "validate": "npm run tslint && npm run coverage",
+    "prerelease": "npm run validate && npm run build",
+    "release": "npm run publish"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
