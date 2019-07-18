@@ -31,8 +31,7 @@
     "coverage": "nyc mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "validate": "npm run tslint && npm run coverage",
-    "prerelease": "npm run validate && npm run build",
-    "release": "npm run publish"
+    "prepublishOnly": "npm run validate && npm run build"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
