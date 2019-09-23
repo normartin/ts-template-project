@@ -17,18 +17,18 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, validate, coveralls
+    - name: npm install, validate
       run: |
         npm install
         npm run validate
       env:
         CI: true
-    - name: Coveralls Parallel
+    - name: Coveralls ${{ matrix.node-version }}
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.github_token }}
         parallel: true
-        path-to-lcov: ./reports/coverage/lcov.info # optional (default value)
+        path-to-lcov: ./reports/coverage/lcov.info
 
   coveralls:
     needs: build

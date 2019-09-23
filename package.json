@@ -7,8 +7,7 @@
   "repository": "https://github.com/normartin/ts-template-project",
   "bugs": "https://github.com/normartin/ts-template-project/issues",
   "keywords": [
-    "promise",
-    "cache",
+    "template",
     "typescript"
   ],
   "files": [
@@ -29,7 +28,6 @@
     "posttest": "npm run tslint",
     "tslint": "tslint 'src/**/*.ts' 'test/**/*.ts'",
     "coverage": "nyc mocha",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "validate": "npm run tslint && npm run coverage",
     "prepublishOnly": "npm run validate && npm run build"
   },
