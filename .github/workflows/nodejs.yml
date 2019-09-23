@@ -24,11 +24,11 @@ jobs:
       env:
         CI: true
     - name: Coveralls Parallel
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.github_token }}
-          parallel: true
-          path-to-lcov: ./reports/coverage/lcov.info # optional (default value)
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        parallel: true
+        path-to-lcov: ./reports/coverage/lcov.info # optional (default value)
 
   coveralls:
     needs: build
