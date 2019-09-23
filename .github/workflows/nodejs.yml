@@ -32,6 +32,7 @@ jobs:
 
   coveralls:
     needs: build
+    runs-on: ubuntu-latest
     steps:
       - name: Coveralls Finished
         uses: coverallsapp/github-action@master
