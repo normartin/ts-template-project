@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm validate, coveralls
       run: |
-        npm validate
-        npm coveralls
+        npm run validate
+        npm run coveralls
       env:
         CI: true
